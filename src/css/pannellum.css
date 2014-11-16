@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 html {
     height: 100%;
 }
@@ -10,7 +12,7 @@ body {
     cursor: default;
     width: 100%;
     height: 100%;
-    font-family: Helvetica, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
     background: #f4f4f4 url('img/background.svg') repeat;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -301,6 +303,30 @@ div.tooltip:hover:after {
     border-color: rgba(0,0,0,0.7) transparent transparent transparent;
     top: -12px;
     left: 3px;
+}
+
+div.tooltip span.image-tooltip{
+	width: auto!important;
+	max-width: none!important;
+}
+
+div.hotspot span img{
+	max-width: 500pt;
+}
+
+#author_box{
+	width: 100%;
+}
+
+div#author_box img, div#title_box img, div#author_box svg, div#title_box svg{
+	min-width: 65pt;
+	
+	max-width:200pt;
+}
+
+@media(max-width: 970px){
+	div.hotspot span img{max-width: 200pt;}
+	div#author_box img, div#title_box img, div#author_box svg, div#title_box svg{max-width:80pt;}
 }
 
 #compass {
