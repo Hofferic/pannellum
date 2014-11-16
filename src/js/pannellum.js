@@ -592,15 +592,16 @@ function createHotSpots() {
                 document.getElementById('page').appendChild(div);
                 span.appendChild(video);
             } else if (hs.image) {
-                var a = document.createElement('a');
+                /*var a = document.createElement('a');
                 a.setAttribute('href', hs.image);
                 a.setAttribute('target', '_blank');
-                span.appendChild(a);
+                span.appendChild(a);*/
                 var image = document.createElement('img');
                 image.setAttribute('src',hs.image);
                 image.setAttribute('style','width:' + hs.width + 'px');
                 document.getElementById('page').appendChild(div);
-                a.appendChild(image);
+				span.setAttribute("class", "image-tooltip");
+                span.appendChild(image);
                 
             } else {
                 if (hs.sceneId) {
@@ -768,7 +769,7 @@ function processOptions() {
                 break;
             
             case 'author':
-                document.getElementById('author_box').innerHTML = 'by ' + config[key];
+                document.getElementById('author_box').innerHTML = config[key];
                 document.getElementById('panorama_info').style.display = 'inline';
                 break;
                 
