@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>pannellum</title>
+        <title>Pannellum - Panoramaviewer</title>
         <meta charset="utf-8">
         <link type="text/css" rel="Stylesheet" href="css/pannellum.css" />
     </head>
@@ -33,18 +33,19 @@
         </div>
         
         <div id="fullwindowtoggle_button" onclick="toggleFullWindow()" class="sprite fullwindowtoggle_button_inactive controls control"></div>
+		
         
-        <div id="load_box"><p>Loading...<div class="lbox"><div class="loading"></div></div></div>
+        <div id="load_box"><p>Laden...<div class="lbox"><div class="loading"></div></div></div>
         
-        <div id="load_button" onclick="load()"><p>Click to<br>Load<br>Panorama<p></div>
+        <div id="load_button" onclick="load()"><p>Hier klicken um das<br>Panorama zu Laden<p></div>
         
-        <div id="nocanvas" class="infobox"><p>Your browser does not have the necessary WebGL support to display this panorama.</p></div>
+        <div id="nocanvas" class="infobox"><p>Ihr Browser unterstützt weder WebGL noch CSS3D. Bitte benutzen sie eine neuere Version von Chrome, Firefox, Opera, Internet Explorer oder Opera.</p></div>
         
         <div id="compass" class="controls control"></div>
         
-        <span id="about" style="display: none;"><a href="http://pannellum.org/" target="_blank">Pannellum</a></span>
+        <span id="about" style="display: none; line-height:10pt;"><a href="//www.skyview-luftaufnahmen.de" target="_blank" style="font-weight:600;">SkyView<span style="color: #4FAFC2; font-size: 16pt; line-height: 0;">.</span></a> Panoramaanzeige.<br/>Basierend auf <a href="http://pannellum.org/" target="_blank">Pannellum</a></span>
         
-        <noscript><div id="nojavascript" class="infobox"><p>Javascript is required to view this panorama.<br>(It could be worse; you could need a plugin.)</p></div></noscript>
+        <noscript><div id="nojavascript" class="infobox"><p>Javascript muss aktiviert sein um dieses Panorama anzuzeigen.<br>(Immerhin wird kein Plugin benötigt.)</p></div></noscript>
         
         <script type="text/javascript" src="js/libpannellum.js"></script>
         <script type="text/javascript" src="js/RequestAnimationFrame.js"></script>
